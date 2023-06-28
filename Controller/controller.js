@@ -12,7 +12,7 @@ function sendEmail(req, res) {
     }
   });
 
-  // Email options
+  // email,subject,content
   const mailOptions = {
     from: 'niveshpadmakumar.s@gmail.com', // Replace with the sender's email address
     to: email,
