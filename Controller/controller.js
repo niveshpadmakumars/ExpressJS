@@ -7,14 +7,14 @@ function sendEmail(req, res) {
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'niveshpadmakumar.s@gmail.com', // Replace with your email address
-      pass: 'lwafxbsihxlhwjbo' // Replace with your email password or an app-specific password
+      user: 'niveshpadmakumar.s@gmail.com', 
+      pass: 'lwafxbsihxlhwjbo' 
     }
   });
 
   // email,subject,content
   const mailOptions = {
-    from: 'niveshpadmakumar.s@gmail.com', // Replace with the sender's email address
+    from: 'niveshpadmakumar.s@gmail.com', 
     to: email,
     subject: subject,
     text: content
